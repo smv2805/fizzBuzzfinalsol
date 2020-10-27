@@ -16,4 +16,31 @@ class FizzBuzzTest {
         String result=fizzBuzz.play(3);
         assertEquals("Fizz",result);
     }
+    @Test
+    void Testdivi3(){
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String result=fizzBuzz.play(6);
+        assertEquals("Fizz",result);
+
+    }
+    @Test
+    void test5(){FizzBuzz fizzBuzz=new FizzBuzz();
+        String result=fizzBuzz.play(5);
+        assertEquals("Buzz",result);
+
+    }
+    @Test
+    void testDivi5(){
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String result=fizzBuzz.play(10);
+        assertEquals("Buzz",result);
+    }
+    @Test
+    void testDivisible3and5(){
+        FizzBuzz fizzBuzz=new FizzBuzz();
+        String result=fizzBuzz.play(15);
+        assertEquals("FizzBuzz",result);
+
+    }
+
 }
